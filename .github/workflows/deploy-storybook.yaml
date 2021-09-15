@@ -26,3 +26,4 @@ jobs:
         with:
           branch: gh-pages
           folder: docs-build
+          target_folder: docs
