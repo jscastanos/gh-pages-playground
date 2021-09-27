@@ -17,7 +17,6 @@ jobs:
         uses: juliangruber/sleep-action@v1
         with:
           time: 10m
-        run: echo done busy work
 
       - name: Print End
         run: echo end
