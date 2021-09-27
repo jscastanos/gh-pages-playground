@@ -1,0 +1,15 @@
+name: Start Workflow
+on: [push, workflow_dispatch]
+
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - name: Cancel Workflow Action
+        uses: styfle/cancel-workflow-action@0.6.0
+        with:
+          access_token: ${{ github.token }}
+          workflow_id: end
+      - name: Print Start
+        run: echo start

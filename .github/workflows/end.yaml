@@ -1,0 +1,18 @@
+name: End Workflow
+on:
+  workflow_run:
+    workflows:
+      - 'Release Workflow'
+    types:
+      - completed
+  workflow_dispatch:
+
+
+jobs:
+  end:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - name: Print End
+        run: echo end
+
