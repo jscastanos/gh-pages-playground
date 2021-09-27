@@ -9,11 +9,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Cancel Workflow Action
-        uses: styfle/cancel-workflow-action@0.6.0
-        with:
-          access_token: ${{ github.token }}
-          workflow_id: start.yaml, end.yaml
-
       - name: Print Start
         run: sleep 1m; echo start
