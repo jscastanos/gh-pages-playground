@@ -14,8 +14,11 @@ jobs:
     timeout-minutes: 3
     steps:
       - name: Do something busy
-        timeout-minutes: 10
+        uses: juliangruber/sleep-action@v1
+        with:
+          time: 10m
         run: echo done busy work
+
       - name: Print End
         run: echo end
 
