@@ -2,7 +2,7 @@ name: End Workflow
 on:
   workflow_run:
     workflows:
-      - 'Release Workflow'
+      - 'Start Workflow'
     types:
       - completed
   workflow_dispatch:
