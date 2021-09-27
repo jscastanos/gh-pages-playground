@@ -11,8 +11,12 @@ on:
 jobs:
   end:
     runs-on: ubuntu-latest
-    timeout-minutes: 1
+    timeout-minutes: 3
     steps:
+      - name: Do something busy
+        timeout-minutes: 10
+        run: echo done busy work
       - name: Print End
         run: echo end
+
 
