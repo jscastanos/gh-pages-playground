@@ -15,13 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
-      - name: Do something busy
-        uses: juliangruber/sleep-action@v1
-        with:
-          time: 10m
 
       - name: Print End
-        run: echo end
+        run:  sleep 10m; echo  end
 
 
