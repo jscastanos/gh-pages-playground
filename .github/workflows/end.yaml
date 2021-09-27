@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
       - name: Do something busy
         uses: juliangruber/sleep-action@v1
         with:
